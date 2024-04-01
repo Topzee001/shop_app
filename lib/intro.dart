@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:shop_app/homepage.dart';
 
-
 class IntroPage extends StatefulWidget {
   const IntroPage({super.key});
 
   @override
   State<IntroPage> createState() => _IntroPageState();
 }
+
 class _IntroPageState extends State<IntroPage> {
   @override
   Widget build(BuildContext context) {
@@ -44,15 +44,15 @@ class _IntroPageState extends State<IntroPage> {
             GestureDetector(
               onTap: () {
                 Navigator.pushReplacement(context,
-                    MaterialPageRoute(builder: (context) => HomePage()));
+                    MaterialPageRoute(builder: (context) => const HomePage()));
               },
               child: Container(
                 decoration: BoxDecoration(
                   color: Colors.green.shade400,
                   borderRadius: BorderRadius.circular(12),
                 ),
-                padding: EdgeInsets.all(24),
-                child: Text(
+                padding: const EdgeInsets.all(24),
+                child: const Text(
                   'Get started',
                   style: TextStyle(
                       color: Colors.white, fontWeight: FontWeight.bold),
