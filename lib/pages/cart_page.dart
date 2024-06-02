@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 //import 'package:flutter/widgets.dart';
 import 'package:provider/provider.dart';
 import 'package:shop_app/model/cart.dart';
+import 'package:shop_app/pages/payment.dart';
 
 class CartPage extends StatelessWidget {
   const CartPage({super.key});
@@ -82,7 +83,7 @@ class CartPage extends StatelessWidget {
                           child: const Row(
                             children: [
                               Text(
-                                'Pay now',
+                                'Checkout',
                               ),
                               Icon(
                                 Icons.arrow_forward_ios,
@@ -92,8 +93,13 @@ class CartPage extends StatelessWidget {
                             ],
                           ),
                         ),
-                        onTap: () {},
-                      )
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const PaymentPage()));
+                        },
+                      ),
                     ],
                   ),
                 ),

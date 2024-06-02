@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:shop_app/homepage.dart';
+import 'package:shop_app/pages/homepage.dart';
 
 class IntroPage extends StatefulWidget {
   const IntroPage({super.key});

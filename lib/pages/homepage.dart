@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'package:shop_app/cart_page.dart';
+import 'package:shop_app/pages/cart_page.dart';
 import 'package:shop_app/components/grocery_item_tile.dart';
 import 'package:shop_app/model/cart.dart';
 
